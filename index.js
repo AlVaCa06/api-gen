@@ -75,4 +75,4 @@ httpServer.listen(HTTP_PORT, () => {
   console.log(`🔒 HTTPS server running on port ${HTTPS_PORT}`);
 });*/
 
-module.exports = { httpServer, httpsServer };
+module.exports = { httpServer };
