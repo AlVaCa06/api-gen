@@ -1,8 +1,8 @@
 const LogIn = () => async (req, res, next) => {
     const { correo, pass } = req.body;
 
-    try {
-      const usuario = await Usuario.findOne({ where: { correo } });
+   try {
+      /* const usuario = await Usuario.findOne({ where: { correo } });
   
       if (!usuario) {
         return res.status(401).json({ message: 'Usuario no encontrado' });
@@ -19,7 +19,7 @@ const LogIn = () => async (req, res, next) => {
         process.env.JWT_SECRET,
         { expiresIn: '1h' }
       );
-  
+  */
       return res.json({ message: 'Login exitoso', token });
     } catch (error) {
       console.error('Error en login:', error);

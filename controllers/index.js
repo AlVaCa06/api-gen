@@ -1,9 +1,5 @@
-const logInController = require('./login');
-const pacientesController = require('./pacientes');
-const usuariosController = require('./usuarios');
+const logInController = require('./login'); 
 
 module.exports = {
-    logInController,
-    pacientesController,
-    usuariosController
+    logInController, 
 };
